@@ -32,16 +32,22 @@ export class FlatPackActorSheet extends ActorSheet {
         
         if (!this.options.editable) return;
         
-        html.find('item-edit').click(ev => {
-            const li = $(ev.currentTarget).parents(".item");
-            const item = this.actor.getOwnedItem(li.data("itemID"));
-            item.sheet.render(true);
-        });
-        
-        html.find('item-delete').click(ev => {
-            const li = $(ev.currentTarget).parents(".item");
-            this.actor.deleteOwnedItem(li.data("itemID"));
-            li.slideUp(200, () => this.render(false));
-        });
+         // Update Inventory Item
+    html.find(".item-edit").click((ev) => {
+      let itemId = $(ev.currentTarget).parents(".item").attr("data-item-id");
+      const item = this.actor.getOwnedItem(itemId);
+      // const item = this.actor.getEmbeddedEntity("OwnedItem", itemId);
+      item.sheet.render(true);
+    });
+
+    // Delete Inventory Item
+    html.find(".item-delete").click((ev) => {
+      let li = $(ev.currentTarget).parents(".item"),
+        itemId = li.attr("data-item-id");
+      // this.actor.deleteOwnedItem(itemId);
+      this.actor.deleteEmbeddedEntity("OwnedItem", itemId);
+      li.slideUp(200, () => this.render(false));
+    });
+       
     }
 }
