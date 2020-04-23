@@ -1,0 +1,21 @@
+{
+    "name": "flatpacktemplate",
+    "title": "Flatpack Template",
+    "description": "A simple starter template for use in the creation of Game Systems for use with Foundry VTT",
+    "version": 0.1,
+    "minimumCoreVersion": "0.5.5",
+    "compatibleCoreVersion": "0.5.5",
+    "templateVersion": 2,
+    "author": "GateKept",
+    "esmodules": ["module/flatpacktemplate.js", "scripts/scripts.js"],
+    "styles": ["styles/flatpacktemplate.css"],
+    "packs": [],
+    "languages": [],
+    "gridDistance": 1,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "resource1",
+    "secondaryTokenAttribute": "resource2",
+    "url": "",
+    "manifest": "",
+    "license": ""
+}

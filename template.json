@@ -1,0 +1,71 @@
+{
+    "Actor": {
+        "types": ["character"],
+        "character": {
+            "header": {
+                "resource1": {
+                    "value": 0,
+                    "label": "resource 1",
+                    "modifier": []
+                },
+                "resource2": {
+                    "value": 0,
+                    "label": "resource 2",
+                    "modifier": []
+                }
+            },
+            "attributes": {
+                "text": {
+                    "value": "",
+                    "label": "Text",
+                    "modifier": []
+                },
+                "number": {
+                    "value": 0,
+                    "label": "Number",
+                    "modifier": []
+                },
+                "boolean": {
+                    "value": false,
+                    "label": "Boolean",
+                    "modifier": []
+                }
+            },
+            "notes": {
+                "notes": ""
+            }
+        }
+    },
+    "Item": {
+        "types": ["item"],
+        "item": {
+            "header": {
+                "resource1": {
+                    "value": 0,
+                    "label": "resource 1",
+                    "modifier": []
+                }
+            },
+            "attributes": {
+                "text": {
+                    "value": "",
+                    "label": "Text",
+                    "modifier": []
+                },
+                "number": {
+                    "value": 0,
+                    "label": "Number",
+                    "modifier": []
+                },
+                "boolean": {
+                    "value": false,
+                    "label": "Boolean",
+                    "modifier": []
+                }
+            },
+            "notes": {
+                "notes": ""
+            }
+        }
+    }
+}
