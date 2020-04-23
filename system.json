@@ -15,7 +15,7 @@
     "gridUnits": "m",
     "primaryTokenAttribute": "resource1",
     "secondaryTokenAttribute": "resource2",
-    "url": "",
-    "manifest": "",
-    "license": ""
+    "url": "https://github.com/GateKept/flatpacktemplate",
+    "manifest": "https://github.com/GateKept/flatpacktemplate/blob/master/system.json",
+    "license": "LICENSE.txt"
 }
