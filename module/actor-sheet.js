@@ -25,7 +25,7 @@ export class FlatPackActorSheet extends ActorSheet {
         super.activateListeners(html);
         let tabs = html.find('tabs');
         let initial = this._sheetTab;
-        new Tabs(tabs, {
+        new TabsV2(tabs, {
             initial: initial,
             callback: clicked => this._sheetTab = clicked.data("tab")
         });
@@ -38,7 +38,7 @@ export class FlatPackActorSheet extends ActorSheet {
             item.sheet.render(true);
         });
         
-        html.find('item-delet').click(ev => {
+        html.find('item-delete').click(ev => {
             const li = $(ev.currentTarget).parents(".item");
             this.actor.deleteOwnedItem(li.data("itemID"));
             li.slideUp(200, () => this.render(false));

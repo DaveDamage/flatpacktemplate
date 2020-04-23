@@ -23,9 +23,9 @@ export class FlatPackItemSheet extends ItemSheet {
     
     activateListeners(html) {
         super.activateListeners(html);
-        let tabs = html.fins('tabs');
+        let tabs = html.find('tabs');
         let initial = this._sheetTab;
-        new Tabs(tabs, {
+        new TabsV2(tabs, {
             initial: initial,
             callback: clicked => this._sheetTab = clicked.data("tab")
         });
