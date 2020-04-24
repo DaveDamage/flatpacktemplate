@@ -48,6 +48,15 @@ export class FlatPackActorSheet extends ActorSheet {
       this.actor.deleteEmbeddedEntity("OwnedItem", itemId);
       li.slideUp(200, () => this.render(false));
     });
+        
+    // Roll Button Listener
+        html.find('.roll-button').click((ev) => {
+            let buttonValue = $(ev.currentTarget);
+            const roll = new Roll("1d20 + " + Number(buttonValue.val()))
+            roll.roll
+            roll.toMessage();
+        });
+    
        
     }
 }

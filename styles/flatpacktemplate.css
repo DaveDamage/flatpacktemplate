@@ -111,6 +111,10 @@
     width: 80%;
 }
 
+.sheet .roll-button {
+    width: 15%;
+}
+
 .sheet .attribute-number-input {
     width: 15%;
 }
